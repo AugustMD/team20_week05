@@ -12,7 +12,7 @@ public class Gold extends Plan{
 		this.includeMinutes = 1000;
 		this.basicMontlyRate = 49.95;
 	}
-
+ 
 	public double getBasicMontlyRate(){
 		return this.basicMontlyRate;
 	}

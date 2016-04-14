@@ -13,7 +13,7 @@ public class Customer{
 
 
     Customer(String name){
-    	this.input = new InputClass();
+    	//this.input = new InputClass();
 
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
@@ -28,6 +28,10 @@ public class Customer{
 
         this.addressInfo = new Address("Chung-nam", "Cheon-an", "123-322");
 
+    }
+    
+    public void setUsedInfo(String ptype, int used, int lines){
+    	this.input = new InputClass(ptype, used, lines);
     }
 
     public Plan getPlanInfo(){

@@ -10,7 +10,7 @@ public class InputClass {
 	private int numberOfLines;
 	private int usedAmount;
 	private Logger log;
-
+	/*
 	public InputClass(){
 		log = Logger.getLogger("Logger");
 		scan=new Scanner(System.in);
@@ -23,6 +23,12 @@ public class InputClass {
 
 		log.log(Level.INFO, "\nInput Number Of Lines :");
 		numberOfLines = scan.nextInt();
+	}*/
+	
+	public InputClass(String plan, int amount, int numberOfLines){
+		this.planType = plan;
+		this.usedAmount = amount;
+		this.numberOfLines = numberOfLines;
 	}
 
 	public String getPlanType(){
