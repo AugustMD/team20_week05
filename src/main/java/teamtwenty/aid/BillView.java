@@ -19,14 +19,14 @@ public class BillView {
 		this.minutesUsed = billCalculated.getMinutesUsed();
 	}*/
 	
-	public BillView(Customer customer,InputClass input){
-		this.billCalculated = new BillCalculator(input);
+	public BillView(Customer customer,InputClass input,Address address){
+		this.billCalculated = new BillCalculator(input,address);
 		this.expectedBill = billCalculated.calculateExpectedBill();
 		this.customerInfo = customer;
 		this.minutesUsed = billCalculated.getMinutesUsed();
 	}
 
-	/*public void printAll(){
+	public void printAll(){
 
 		log = Logger.getLogger("Logger");
 		log.log(Level.INFO, "\nCustomerInfo : \nName : "+this.customerInfo.getCustomerName()+
@@ -34,5 +34,5 @@ public class BillView {
 		"\nCity : "+this.customerInfo.getAddressInfo().getCity()+
 		"\nStreet no : "+this.customerInfo.getAddressInfo().getStreetNo()+
 		"\n\nMinutes used : "+this.minutesUsed+"\nExpected Total Bill : "+this.expectedBill);
-	}*/
+	}
 }

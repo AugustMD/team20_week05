@@ -13,7 +13,7 @@ public class AppTest {
 	BillView bv;
 	Customer customer;
 	InputClass[] input;
-	
+	Address address;
 	/*@BeforeClass
 	public void initAppTest() {
 		
@@ -22,6 +22,8 @@ public class AppTest {
 	
 	@Test
 	public void testSilver() {
+		Main.main(null);
+		address=new Address("Korea","Deajeon","585-20");
 		input=new InputClass[4];
 		input[0] = new InputClass("Silver",600,4);
 		input[1] = new InputClass("Gold",1010,3);
@@ -30,9 +32,9 @@ public class AppTest {
 		
 		
 		for(int i=0;i<4;i++){
-			customer = new Customer(input[i]);
+			customer = new Customer(input[i],address);
 		//customer.setUsedInfo("Silver", 1004, 3);
-			bv = new BillView(customer,input[i]);
+			bv = new BillView(customer,input[i],address);
 		}
 	}
 }

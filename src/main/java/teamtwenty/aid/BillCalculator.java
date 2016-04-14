@@ -6,9 +6,9 @@ public class BillCalculator {
 	private Plan customerPlan;
 	private int numberOfLines;
 
-	BillCalculator(InputClass input){
+	BillCalculator(InputClass input,Address address){
 		this.expectedBill = 0;
-		this.customerInfo = new Customer(input);
+		this.customerInfo = new Customer(input,address);
 		this.customerPlan = this.customerInfo.getPlanInfo();
 		this.minutesUsed = customerInfo.getMinutesUsed();
 		this.numberOfLines = customerInfo.getNumberOfLines();

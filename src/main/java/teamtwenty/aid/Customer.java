@@ -13,7 +13,7 @@ public class Customer{
 
 
    
-    public Customer(InputClass input){
+    public Customer(InputClass input,Address address){
   //  	this.input = new InputClass("Silver", 1005, 3);
 
         this.numberOfLines = input.getNumberOfLines();
@@ -27,7 +27,7 @@ public class Customer{
             this.planInfo = new Gold();
         }
 
-        this.addressInfo = new Address("Chung-nam", "Cheon-an", "123-322");
+        this.addressInfo = address;
 
     }
     
