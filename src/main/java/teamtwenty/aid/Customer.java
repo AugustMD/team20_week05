@@ -12,14 +12,15 @@ public class Customer{
  
 
 
-    Customer(String name){
-    	this.input = new InputClass("Silver", 1005, 3);
+   
+    public Customer(InputClass input){
+  //  	this.input = new InputClass("Silver", 1005, 3);
 
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
         this.planType = input.getPlanType();
 
-        this.name = name;
+//        this.name = name;
         if("silver".equals(this.planType) || "Silver".equals(this.planType)){
             this.planInfo = new Silver();
         }else if ("Gold".equals(this.planType) || "gold".equals(this.planType)){

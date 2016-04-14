@@ -8,7 +8,7 @@ public class BillView {
 
 	private double expectedBill;
 	private Customer customerInfo;
-	private int minutesUsed; 
+	private int minutesUsed;  
 	private Logger log;
 
 
@@ -19,8 +19,8 @@ public class BillView {
 		this.minutesUsed = billCalculated.getMinutesUsed();
 	}*/
 	
-	public BillView(Customer customer){
-		this.billCalculated = new BillCalculator();
+	public BillView(Customer customer,InputClass input){
+		this.billCalculated = new BillCalculator(input);
 		this.expectedBill = billCalculated.calculateExpectedBill();
 		this.customerInfo = customer;
 		this.minutesUsed = billCalculated.getMinutesUsed();

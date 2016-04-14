@@ -12,7 +12,7 @@ import teamtwenty.aid.InputClass;
 public class AppTest {
 	BillView bv;
 	Customer customer;
-	
+	InputClass input;
 	
 	/*@BeforeClass
 	public void initAppTest() {
@@ -22,9 +22,10 @@ public class AppTest {
 	
 	@Test
 	public void testSilver() {
-		customer = new Customer("Conan");
+		input = new InputClass("Silver",1005,3);	
+		customer = new Customer(input);
 		//customer.setUsedInfo("Silver", 1004, 3);
-		bv = new BillView(customer);
+		bv = new BillView(customer,input);
 		 
 	}
 }
