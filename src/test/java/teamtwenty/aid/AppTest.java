@@ -5,16 +5,20 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 
 public class AppTest {
-	private static Gold gold;
+	BillView bv;
+	Customer customer;
+	
 	
 	@BeforeClass
-	public static void initAppTest() {
-		gold = new Gold();
+	public void initAppTest() {
+		customer = new Customer("Conan");
+		
 	}
 	
 	@Test
-	public void testGold() {
-		assertEquals(gold.getBasicMontlyRate(),49.95,0.01);
+	public void testSilver() {
+		customer.setUsedInfo("Silver", 1004, 3);
+		bv = new BillView(customer);
+		 
 	}
-
 }
