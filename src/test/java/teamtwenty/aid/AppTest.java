@@ -6,14 +6,14 @@ import org.junit.BeforeClass;
 
 public class AppTest {
 	BillView bv;
-	Customer customer;
+	Customer customer = new Customer("Conan");
 	
 	
-	@BeforeClass
+	/*@BeforeClass
 	public void initAppTest() {
-		customer = new Customer("Conan");
 		
-	}
+		
+	}*/
 	
 	@Test
 	public void testSilver() {
