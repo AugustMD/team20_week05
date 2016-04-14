@@ -4,7 +4,7 @@ public class Customer{
     private String name;
     private Address addressInfo;
 
-    // Derive from InputClass
+
     private int minutesUsed;
     private int numberOfLines;
     private String planType;
