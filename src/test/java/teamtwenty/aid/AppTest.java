@@ -35,6 +35,7 @@ public class AppTest {
 			customer = new Customer(input[i],address);
 		//customer.setUsedInfo("Silver", 1004, 3);
 			bv = new BillView(customer,input[i],address);
+			bv.printAll();
 		}
 	}
 }

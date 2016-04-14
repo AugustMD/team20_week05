@@ -12,12 +12,7 @@ public class BillView {
 	private Logger log;
 
 
-	/*public BillView(){
-		this.billCalculated = new BillCalculator();
-		this.expectedBill = billCalculated.calculateExpectedBill();
-		this.customerInfo = billCalculated.getCustomerInfo();
-		this.minutesUsed = billCalculated.getMinutesUsed();
-	}*/
+
 	
 	public BillView(Customer customer,InputClass input,Address address){
 		this.billCalculated = new BillCalculator(input,address);

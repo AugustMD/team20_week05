@@ -1,7 +1,7 @@
 package teamtwenty.aid;
 public class Main {
 
-    private Main(){
+    public Main(){
         //stub for stablility
     }
 

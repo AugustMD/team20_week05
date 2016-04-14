@@ -34,9 +34,7 @@ public class BillCalculator {
 
 		return expectedBill;
 	}
-	public Customer getCustomerInfo(){
-		return this.customerInfo;
-	}
+
 	public int getMinutesUsed(){
 		return this.minutesUsed;
 	}

@@ -1,7 +1,6 @@
 package teamtwenty.aid;
 public class Customer{
     private Plan planInfo;
-    private InputClass input;
     private String name;
     private Address addressInfo;
 
@@ -14,13 +13,11 @@ public class Customer{
 
    
     public Customer(InputClass input,Address address){
-  //  	this.input = new InputClass("Silver", 1005, 3);
 
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
         this.planType = input.getPlanType();
 
-//        this.name = name;
         if("silver".equals(this.planType) || "Silver".equals(this.planType)){
             this.planInfo = new Silver();
         }else if ("Gold".equals(this.planType) || "gold".equals(this.planType)){
@@ -31,9 +28,6 @@ public class Customer{
 
     }
     
-    /*public void setUsedInfo(String ptype, int used, int lines){
-    	this.input = new InputClass(ptype, used, lines);
-    }*/
 
     public Plan getPlanInfo(){
         return this.planInfo;
