@@ -23,7 +23,7 @@ public class AppTest {
 	@Test
 	public void testSilver() {
 		customer = new Customer("Conan");
-		customer.setUsedInfo("Silver", 1004, 3);
+		//customer.setUsedInfo("Silver", 1004, 3);
 		bv = new BillView(customer);
 		 
 	}
