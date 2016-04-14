@@ -12,7 +12,7 @@ import teamtwenty.aid.InputClass;
 public class AppTest {
 	BillView bv;
 	Customer customer;
-	InputClass input[]=null;
+	InputClass[] input;
 	
 	/*@BeforeClass
 	public void initAppTest() {
@@ -22,6 +22,7 @@ public class AppTest {
 	
 	@Test
 	public void testSilver() {
+		input=new InputClass[4];
 		input[0] = new InputClass("Silver",600,4);
 		input[1] = new InputClass("Gold",1010,3);
 		input[2] = new InputClass("silver",400,1);
