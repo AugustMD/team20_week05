@@ -4,6 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 
+import teamtwenty.aid.*;
+
 public class AppTest {
 	BillView bv;
 	Customer customer = new Customer("Conan");
