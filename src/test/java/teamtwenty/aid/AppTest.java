@@ -2,11 +2,9 @@ package teamtwenty.aid;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.BeforeClass;
 
 import teamtwenty.aid.Customer;
 import teamtwenty.aid.BillView;
-import teamtwenty.aid.BillCalculator;
 import teamtwenty.aid.InputClass;
 
 public class AppTest {
@@ -14,11 +12,7 @@ public class AppTest {
 	Customer customer;
 	InputClass[] input;
 	Address address;
-	/*@BeforeClass
-	public void initAppTest() {
-		
-		
-	}*/
+
 	
 	@Test
 	public void testSilver() {
@@ -33,7 +27,6 @@ public class AppTest {
 		
 		for(int i=0;i<4;i++){
 			customer = new Customer(input[i],address);
-		//customer.setUsedInfo("Silver", 1004, 3);
 			bv = new BillView(customer,input[i],address);
 			bv.printAll();
 		}

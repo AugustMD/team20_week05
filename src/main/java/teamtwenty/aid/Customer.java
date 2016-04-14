@@ -37,9 +37,6 @@ public class Customer{
         return this.name;
     }
 
-    public String getPlanType(){
-        return this.planType;
-    }
 
     public Address getAddressInfo(){
         return this.addressInfo;
