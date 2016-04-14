@@ -9,11 +9,11 @@ public class Customer{
     private int minutesUsed;
     private int numberOfLines;
     private String planType;
-
+ 
 
 
     Customer(String name){
-    	//this.input = new InputClass();
+    	this.input = new InputClass("", 0, 0);
 
         this.numberOfLines = input.getNumberOfLines();
         this.minutesUsed = input.getUsedAmount();
