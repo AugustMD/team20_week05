@@ -2,9 +2,9 @@ package teamtwenty.aid;
 public abstract class Plan{
 
     // Instance var.
-    double basicMontlyRate;
+    double basicMonthlyRate;
     double includedMinutes;
-    double ratePerAdditionalMinute;
+    double ratePerAdditionalMinutes;
     double ratePerAdditionalLine;
     public static final double LINECOSTOVER4 = 5.0;
 

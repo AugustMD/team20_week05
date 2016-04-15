@@ -3,8 +3,6 @@ package teamtwenty.aid;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
-
 import teamtwenty.aid.Customer;
 import teamtwenty.aid.BillView;
 import teamtwenty.aid.InputClass;

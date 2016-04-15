@@ -8,8 +8,7 @@ public class Main {
 		this();
 	}
     public static void main(String[] args) {
-    	
-    	
+    	// intentional stub    	
     }
     public void test(){
     	// intentional stub

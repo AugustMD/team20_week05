@@ -22,7 +22,7 @@ public class BillCalculator {
 		{
 			if(this.numberOfLines >= 4)
 			{
-				expectedBill = expectedBill+(2*this.customerPlan.getRatePerAdditionalLine())+(this.customerPlan.LINECOSTOVER4*((this.numberOfLines)-3));
+				expectedBill = expectedBill+(2*this.customerPlan.getRatePerAdditionalLine())+(Plan.LINECOSTOVER4*((this.numberOfLines)-3));
 			}else{
 				expectedBill = expectedBill+((this.numberOfLines-1)*this.customerPlan.getRatePerAdditionalLine());
 			}
