@@ -9,7 +9,8 @@ public class Main {
 		this();
 	}
     public static void main(String[] args) throws IOException{
-    	// intentional stub
+    	IOException e = new IOException();
+    	throw e;
     }
     public void test(){
     	// intentional stub
