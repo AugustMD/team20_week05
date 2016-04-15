@@ -18,7 +18,6 @@ public class AppTest {
 	
 	@Test
 	public void testSilver() {
-		try {
 			Main m = new Main(null);
 			
 			address=new Address("Korea","Deajeon","585-20");
@@ -37,9 +36,6 @@ public class AppTest {
 			
 			m.test();
 			Main.main(null);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-		}
 		
 	}
 }
