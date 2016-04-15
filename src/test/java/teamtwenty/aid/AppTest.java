@@ -19,6 +19,8 @@ public class AppTest {
 	@Test
 	public void testSilver() {
 		try {
+			Main m = new Main(null);
+			m.test();
 			Main.main(null);
 			address=new Address("Korea","Deajeon","585-20");
 			input=new InputClass[4];
@@ -35,7 +37,6 @@ public class AppTest {
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 		
 	}
