@@ -16,7 +16,7 @@ public class AppTest {
 	
 	@Test
 	public void testSilver() {
-			Main m = new Main(null);
+			Main m = new Main(new String[]{"TEST"});
 			
 			address=new Address("Korea","Deajeon","585-20");
 			input=new InputClass[4];

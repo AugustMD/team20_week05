@@ -7,11 +7,6 @@ public class Gold extends Plan{
 		this.includedMinutes = 1000;
 		this.basicMonthlyRate = 49.95;
 	}
-	
-	@Override
-	public double getBasicMontlyRate(){
-		return this.basicMonthlyRate;
-	}
 
 	@Override
 	public double getIncludedMinutes(){
@@ -26,5 +21,10 @@ public class Gold extends Plan{
 	@Override
 	public double getRatePerAdditionalLine(){
 		return this.ratePerAdditionalLine;
+	}
+	
+	@Override
+	public double getBasicMontlyRate(){
+		return this.basicMonthlyRate;
 	}
 }
